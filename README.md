@@ -2,6 +2,9 @@
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/KuekHaoYang/KVideo)
 
+# Buy Me A Coffee
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="kuekhaoyang" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+
 # 视频聚合平台 (KVideo)
 
 ![KVideo Banner](public/icon.png)
@@ -906,6 +909,9 @@ KVideo v4.5.0+ 已增加多级回退机制，会依次尝试 HLS.js、原生 HLS
   <br>
   如果这个项目对你有帮助，请考虑给一个 ⭐️
 </div>
+
+# Buy Me A Coffee
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="kuekhaoyang" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 
 ## Star History
 
