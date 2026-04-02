@@ -1,21 +1,6 @@
 name: Android TV APK
 
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-      - ready_for_review
-    paths:
-      - "android-tv/**"
-      - ".github/workflows/android-tv-apk.yml"
-  push:
-    branches:
-      - main
-    paths:
-      - "android-tv/**"
-      - ".github/workflows/android-tv-apk.yml"
   workflow_dispatch:
     inputs:
       release_tag:
@@ -35,15 +20,14 @@ permissions:
   contents: write
 
 concurrency:
-  group: android-tv-apk-${{ github.event.pull_request.number || github.ref }}
+  group: android-tv-apk-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build_android_tv_apk:
-    if: ${{ github.event_name != 'pull_request' || !github.event.pull_request.draft }}
     runs-on: ubuntu-latest
     env:
-      KVIDEO_URL: ${{ github.event_name == 'workflow_dispatch' && inputs.kvideo_url || '' }}
+      KVIDEO_URL: ${{ inputs.kvideo_url || '' }}
     defaults:
       run:
         working-directory: android-tv
